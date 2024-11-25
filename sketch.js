@@ -14,7 +14,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, 5150);
+  createCanvas(windowWidth, 7200);
   background('white');
   noLoop();
 
@@ -98,8 +98,8 @@ function setup() {
     // temperatura media e paese
     textStyle(NORMAL);
     textSize(13);
-    text(riverCountry, xStart + scaledLength + 10, y + 15);
-    text(`${riverTemp}°C`, xStart + scaledLength + 10, y + 30);
+    text(riverCountry, xStart + scaledLength + 10, y + 20);
+    text(`${riverTemp}°C`, xStart + scaledLength + 10, y + 40);
 
     // Sposta il punto y per la prossima linea
     y += lineHeight;
