@@ -1,5 +1,5 @@
 let table;
-let ralewayFont;
+//let ralewayFont;
 
 function preload() {
   // Carica il file CSV
@@ -23,7 +23,7 @@ function setup() {
 
   let xStart = 50; // Punto iniziale delle linee sull'asse x
   let y = 160; // Punto iniziale sull'asse y (spazio per titolo e sottotitolo)
-  let lineHeight = 50; // Spaziatura tra linee
+  let lineHeight = 70; // Spaziatura tra linee
   let maxLength = 700; // Lunghezza max linee
 
   // Colori temperatura
