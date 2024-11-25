@@ -10,7 +10,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(windowWidth, windowHeight)
   background('white');
   noLoop();
 
@@ -79,14 +79,15 @@ function setup() {
 
     // nome fiume
     noStroke();
+    textStyle(BOLD)
     fill(0);
     textAlign(LEFT, CENTER);
     text(riverName, xStart + scaledLength + 10, y);
 
     // temperatura media
-    fill(0);
+    textStyle(NORMAL)
     textSize(12);
-    text(`Temp: ${riverTemp}°C`, xStart + scaledLength + 10, y + 10);
+    text(`${riverTemp}°C`, xStart + scaledLength + 10, y + 10);
 
     // Sposta il punto y per la prossima linea
     y += lineHeight;
